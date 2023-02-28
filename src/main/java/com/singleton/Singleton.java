@@ -12,7 +12,7 @@ public class Singleton {
     }
 
     private static Singleton createInstance() {
-        if (INSTANCE == null) { // בכדי לחסוך תהליך המתנת התהליכונים בשורה 17 כי זה מייצר עומס מבחינת הביצוע
+        if (INSTANCE == null) { // בכדי לחסוך תהליך המתנת התהליכונים בשורה 16 כי זה מייצר עומס מבחינת הביצוע
             synchronized (Singleton.class) {
                 //הבעייה היא שביישומים מרובי תהליכונים (multi-threaded applications) יש להיזהר במימוש התבנית.
                 // אם שני תהליכונים ניגשים לפונקצייה באותו הזמן,
